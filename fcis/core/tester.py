@@ -17,7 +17,7 @@ import time
 import mxnet as mx
 import numpy as np
 
-from module import MutableModule
+from .module import MutableModule
 from utils import image
 from bbox.bbox_transform import bbox_pred, clip_boxes, filter_boxes
 from nms.nms import py_nms_wrapper
