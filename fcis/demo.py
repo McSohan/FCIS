@@ -145,7 +145,7 @@ def main():
         im = cv2.cvtColor(im, cv2.COLOR_BGR2RGB)
         show_masks(im, dets, masks, classes, config)
 
-    print 'done'
+    print ('done')
 
 if __name__ == '__main__':
     main()
