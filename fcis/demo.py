@@ -135,7 +135,7 @@ def main():
 
             dets = [result_dets[j] for j in range(1, num_classes)]
             masks = [result_masks[j][:, 0, :, :] for j in range(1, num_classes)]
-        print 'testing {} {:.4f}s'.format(im_name, toc())
+        print ('testing {} {:.4f}s'.format(im_name, toc()))
         # visualize
         for i in xrange(len(dets)):
             keep = np.where(dets[i][:,-1]>0.7)
