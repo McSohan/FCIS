@@ -25,7 +25,7 @@ update_config(cur_path + '/../experiments/fcis/cfgs/fcis_coco_demo.yaml')
 
 sys.path.insert(0, os.path.join(cur_path, '../external/mxnet', config.MXNET_VERSION))
 import mxnet as mx
-print "use mxnet at", mx.__file__
+print ("use mxnet at", mx.__file__)
 from core.tester import im_detect, Predictor
 from symbols import *
 from utils.load_model import load_param
