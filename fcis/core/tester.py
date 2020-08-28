@@ -11,7 +11,7 @@
 # https://github.com/ijkguo/mx-rcnn/
 # --------------------------------------------------------
 
-import cPickle
+import pickle as cPickle
 import os
 import time
 import mxnet as mx
@@ -154,7 +154,7 @@ def pred_eval(predictor, test_data, imdb, cfg, vis=False, thresh=1e-3, logger=No
             t3 = time.time() - t
             t = time.time()
 
-            print 'testing {}/{} data {:.4f}s net {:.4f}s post {:.4f}s'.format(idx, imdb.num_images, t1, t2, t3)
+            print ('testing {}/{} data {:.4f}s net {:.4f}s post {:.4f}s'.format(idx, imdb.num_images, t1, t2, t3))
             if logger:
                 logger.info('testing {}/{} data {:.4f}s net {:.4f}s post {:.4f}s'.format(idx, imdb.num_images, t1, t2, t3))
             
