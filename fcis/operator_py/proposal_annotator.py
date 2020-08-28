@@ -18,7 +18,7 @@ import numpy as np
 from bbox.bbox_transform import bbox_overlaps, bbox_transform, remove_repetition
 from bbox.bbox_regression import expand_bbox_regression_targets
 from mask.mask_transform import intersect_box_mask
-import cPickle
+import pickle as cPickle
 
 
 class ProposalAnnotatorOperator(mx.operator.CustomOp):
