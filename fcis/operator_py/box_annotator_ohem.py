@@ -17,7 +17,7 @@ Proposal Target Operator selects foreground and background roi and assigns label
 
 import mxnet as mx
 import numpy as np
-import cPickle
+import pickle as cPickle
 
 
 class BoxAnnotatorOHEMOperator(mx.operator.CustomOp):
